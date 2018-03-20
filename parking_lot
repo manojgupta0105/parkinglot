@@ -1,0 +1,17 @@
+echo "=============== Building the Project ============================="
+
+mvn clean install
+
+echo "=============== Build Successful ================================="
+
+echo "=============== Executing with File =============================="
+
+java -jar ./target/gojek-1.0.jar input_file.txt
+
+echo "=============== Executing with File Done ========================="
+
+echo "=============== Executing with Command line input ================="
+
+java -jar ./target/gojek-1.0.jar
+
+echo "=============== Executing with Command line input Done ============"
